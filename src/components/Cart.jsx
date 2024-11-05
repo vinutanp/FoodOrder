@@ -24,7 +24,7 @@ const Cart = () => {
     <Modal
       className="cart"
       open={userctx.action === "cart"}
-      onClose={ handleHideCart}
+      onClose={userctx.action === "cart"? handleHideCart :null}
     >
       <h2>Your Cart</h2>
       <ul>
