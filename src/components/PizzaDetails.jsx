@@ -16,9 +16,9 @@ const PizzaDetails = ({ meal }) => {
           <p className="meal-item-price">₹{meal.price}</p>
           <p className="meal-item-description">{meal.desc}</p>
         </div>
-        <p className="meal-item-actions">
+        <div className="meal-item-actions">
           <Button onClick={handleAddPizza}>Add to Cart</Button>
-        </p>
+        </div>
       </article>
     </li>
   );
