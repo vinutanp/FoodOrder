@@ -19,7 +19,7 @@ const Header = () => {
     <header id="main-header">
       <div id="title">
         <img src={logo} alt="logo"></img>
-        <h1>Pizza Party</h1>
+        <h1>QuickEats</h1>
       </div>
       <div>
         <nav>

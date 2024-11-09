@@ -58,15 +58,15 @@ const products = [
 
     desc: "Pizza topped with our herb-infused signature pan sauce and 100% mozzarella cheese. A classic treat for all cheese lovers out there! ",
   },
-  {
-    id: "06",
-    title: "Cheesy Chicken Pizza",
-    price: 320,
-    image: product_06,
-    category: "Pizza",
+  // {
+  //   id: "06",
+  //   title: "Cheesy Chicken Pizza",
+  //   price: 320,
+  //   image: product_06,
+  //   category: "Pizza",
 
-    desc: "When Cheese Meets Chicken! Onions,Olives,Chicken Bbq,Smoked Chicken,Chicken Salami & Cheesy Dip. ",
-  },
+  //   desc: "When Cheese Meets Chicken! Onions,Olives,Chicken Bbq,Smoked Chicken,Chicken Salami & Cheesy Dip. ",
+  // },
 
   {
     id: "07",
