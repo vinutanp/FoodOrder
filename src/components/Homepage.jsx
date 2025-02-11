@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import homepage from '../assets/Image/homepag.png'
 
 const Homepage = () => {
   return (
@@ -11,7 +12,7 @@ const Homepage = () => {
         <h3>Whether it’s lunch, dinner, or a midnight snack, we’ve got you covered!</h3>
     </div>
     <div className='right-display'>
-        <img src="./src/assets/Image/homepag.png" alt="delivery boy"/>
+        <img src={homepage} alt="delivery boy"/>
     </div>
       
     </div>
