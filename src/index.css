@@ -79,7 +79,7 @@ h1 {
 .meal-item img {
   width: 100%;
   height: 15rem;
-  object-fit:cover;
+  object-fit: cover;
 }
 
 .meal-item h3 {
@@ -125,7 +125,6 @@ h1 {
 
 .modal-actions .text-button {
   color: #1d1a16;
- 
 }
 
 .modal-actions .text-button:hover,
@@ -236,50 +235,49 @@ h1 {
   color: #895129;
 }
 
-.main-section{
+.main-section {
   display: flex;
   padding: 20px;
-
+  flex-wrap: wrap;
 }
 
-.main-section h1{
+.main-section h1 {
   font-weight: 900;
-    font-size: 80px; 
-    line-height: 90px;
-    margin: 0px;
+  font-size: 80px;
+  line-height: 90px;
+  margin: 0px;
 }
 
-.left-display{
+.left-display {
   flex: 1;
   padding: 4rem;
   display: flex;
   justify-content: center;
-  gap:2rem;
+  gap: 2rem;
   align-items: center;
- flex-direction: column;
+  flex-direction: column;
 }
 
-.left-display h3{
+.left-display h3 {
   font-size: 30px;
-  font-weight:normal;
+  font-weight: normal;
   line-height: 40px;
 }
 
-.right-display{
-flex:1;
-display: flex;
-justify-content: center;
-align-items: center;
+.right-display {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.right-display img{
- max-width: 100%;
- height: auto;
- padding-right: 4rem;
-
+.right-display img {
+  max-width: 100%;
+  height: auto;
+  padding-right: 4rem;
 }
 
-#footer{
+#footer {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -287,17 +285,18 @@ align-items: center;
   margin: 0 auto;
 }
 
-.footer-info{
+.footer-info {
   flex: 1;
   min-width: 200px;
   padding: 1rem;
 }
 
-.footer-contact{
+.footer-contact {
   flex: 1;
   min-width: 200px;
   padding: 1rem;
 }
+
 .modal {
   background-color: #e4ddd4;
   border-radius: 6px;
@@ -322,5 +321,101 @@ align-items: center;
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .main-section {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .main-section h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .left-display h3 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .right-display img {
+    padding-right: 0;
+  }
+
+  #main-header {
+    flex-direction: column;
+    padding: 1rem 5%;
+  }
+
+  .meal-item img {
+    height: 12rem;
+  }
+
+  #meals {
+    grid-template-columns: 1fr;
+  }
+
+  .meal-item h3 {
+    font-size: 1.2rem;
+  }
+
+  .meal-item-description {
+    font-size: 0.9rem;
+  }
+
+  .meal-item-price {
+    font-size: 0.8rem;
+  }
+
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cart-item-actions {
+    justify-content: flex-start;
+  }
+
+  .modal {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .left-display h1 {
+    font-size: 2.5rem;
+  }
+
+  .left-display h3 {
+    font-size: 1rem;
+  }
+
+  .right-display img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .meal-item h3 {
+    font-size: 1rem;
+  }
+
+  .meal-item-price {
+    font-size: 0.75rem;
+  }
+
+  .cart-total {
+    font-size: 1rem;
+  }
+
+  .control input {
+    max-width: 100%;
+  }
+
+  .footer-info,
+  .footer-contact {
+    flex: 1;
+    min-width: 150px;
   }
 }
